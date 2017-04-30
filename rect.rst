@@ -57,4 +57,7 @@ pygame.rect
    or a length 2 sequence of position (x, y) and size (w, h),
    or a length 1 tuple containing a rectangle representation,
    or have a method *rect* that returns a rectangle.
-   One failure possible raise a Python exception before returning NULL.
+   Pass a pointer to a locally declared GAME_Rect as *temp*.
+   Do not rely on this being filled in; use the function's return value instead.
+   On success return a pointer to a GAME_Rect representation of the rectangle.
+   One failure possibly raise a Python exception before returning NULL.
